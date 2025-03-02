@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    tools:context="ui.profile.SettingsFragment">
+
+    <ImageView
+        android:id="@+id/imgBack"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_flecha"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@id/imgBack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"/>
+
+    <ImageView
+        android:id="@+id/icon_faq"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_faq"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/content_faq"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="@id/icon_faq"
+        app:layout_constraintBottom_toBottomOf="@id/icon_faq"
+        app:layout_constraintStart_toEndOf="@id/icon_faq"
+        app:layout_constraintEnd_toStartOf="@id/arrow_faq"
+        android:layout_marginStart="8dp">
+
+        <TextView
+            android:id="@+id/title_faq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/faq_title"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/summary_faq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/faq_summary"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/arrow_faq"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_settings_arrow"
+        app:layout_constraintTop_toTopOf="@id/icon_faq"
+        app:layout_constraintBottom_toBottomOf="@id/icon_faq"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@id/icon_faq"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/icon_request_admin"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_request_admin"
+        app:layout_constraintTop_toBottomOf="@id/divider1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <LinearLayout
+        android:id="@+id/content_request_admin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="@id/icon_request_admin"
+        app:layout_constraintBottom_toBottomOf="@id/icon_request_admin"
+        app:layout_constraintStart_toEndOf="@id/icon_request_admin"
+        app:layout_constraintEnd_toStartOf="@id/arrow_request_admin"
+        android:layout_marginStart="8dp">
+
+        <TextView
+            android:id="@+id/title_request_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/request_admin_title"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/summary_request_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/request_admin_summary"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/arrow_request_admin"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_settings_arrow"
+        app:layout_constraintTop_toTopOf="@id/icon_request_admin"
+        app:layout_constraintBottom_toBottomOf="@id/icon_request_admin"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@id/icon_request_admin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/icon_logout"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_cerrar_sesion"
+        app:layout_constraintTop_toBottomOf="@id/divider2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <LinearLayout
+        android:id="@+id/content_logout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="@id/icon_logout"
+        app:layout_constraintBottom_toBottomOf="@id/icon_logout"
+        app:layout_constraintStart_toEndOf="@id/icon_logout"
+        app:layout_constraintEnd_toStartOf="@id/arrow_logout"
+        android:layout_marginStart="8dp">
+
+        <TextView
+            android:id="@+id/title_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/logout_title"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/summary_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/logout_summary"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/arrow_logout"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_settings_arrow"
+        app:layout_constraintTop_toTopOf="@id/icon_logout"
+        app:layout_constraintBottom_toBottomOf="@id/icon_logout"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@id/icon_logout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

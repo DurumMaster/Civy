@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="@color/surface"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="12dp"
+    tools:context=".ui.profile.ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgUserAvatar"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:padding="3dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_default_avatar"
+            app:shapeAppearanceOverlay="@style/CircularImageViewStyle"
+            app:strokeColor="@color/black"
+            android:background="@color/primary"
+            app:strokeWidth="2dp"
+            android:elevation="2dp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/txtUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full Name"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtUserLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Piso 1B, Bloque B"
+                android:textSize="14sp"
+                android:textColor="@color/secondary"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/txtUserPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="987352638"
+                android:textSize="14sp"
+                android:textColor="@color/secondary"
+                android:layout_marginTop="2dp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

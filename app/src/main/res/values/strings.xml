@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">Civy</string>
+    <string name="title_home">Incidencias</string>
+    <string name="title_create">Crear Incidencia</string>
+    <string name="title_profile">Perfil</string>
+    <string name="et_correo_electronico">Correo electrónico</string>
+    <string name="et_contrasena">Contraseña</string>
+    <string name="btn_iniciar_sesion">Iniciar Sesión</string>
+    <string name="et_err_login_correo">Correo inválido</string>
+    <string name="et_err_login_password">Debe tener al menos 6 caracteres, incluyendo letras y números</string>
+    <string name="err_login">El correo o contraseña no son válidos</string>
+    <string name="btn_registrarse">Registrarse</string>
+    <string name="err_retry">Ha ocurrido un error, vuelva a intentarlo</string>
+    <string name="err_btn_login">Debe introducir el correo y contraseña</string>
+    <string name="default_web_client_id">538268562279-u4200j00f9ckf3coj2vobmd0c3v2s78n.apps.googleusercontent.com</string>
+    <string name="err_datos_inicio">Error al verificar los datos del usuario.</string>
+    <string name="et_nombre">Nombre</string>
+    <string name="et_apellidos">Apellidos</string>
+    <string name="et_piso">Piso y letra</string>
+    <string name="et_bloque">Bloque</string>
+    <string name="et_telefono">Teléfono</string>
+    <string name="btn_guardar">Guardar</string>
+    <string name="error_nombre">Debe introducir su nombre</string>
+    <string name="error_apellidos">Debe introducir sus apellidos</string>
+    <string name="error_piso">Debe introducir su piso y letra</string>
+    <string name="error_bloque">Debe introducir el bloque donde se encuentra su vivienda</string>
+    <string name="error_telefono">Debe introducir su teléfono</string>
+    <string name="error_telefono_invalido">El número de teléfono no es válido</string>
+    <string name="err_registro_usu_existe">Este usuario ya existe</string>
+    <string name="home_filtro1">Bloque</string>
+    <string name="home_filtro2">Profesional</string>
+    <string name="home_filtro3">Estado</string>
+    <string name="txt_perfil_admin">Administrador</string>
+    <string name="menu_opt_editar">Editar</string>
+    <string name="menu_opt_eliminar">Eliminar</string>
+    <string name="txt_profile_fullName">%s %s</string>
+    <string name="txt_profile_location">Piso: %s, Bloque: %s</string>
+    <string name="et_create_title">Título</string>
+    <string name="txt_create_header">Crear Incidencia</string>
+    <string name="txt_create_description">Descripción</string>
+    <string name="btn_createa_publish">Publicar</string>
+    <string name="err_create_title">Debes excribir un título para la incidencia</string>
+    <string name="err_create_description">Debes escribir una descripción para la incidencia</string>
+    <string name="err_save_incidence">Error al guardar la incidencia</string>
+    <string name="err_push_image">Error al subir la imagen</string>
+    <string name="create_photo_opt1">Elegir de galería</string>
+    <string name="create_photo_opt2">Tomar foto</string>
+    <string name="create_photo_opt3">Eliminar imagen</string>
+    <string name="create_photo_opt_title">Seleccionar imagen</string>
+    <string name="general_settings_header">Ajustes Generales</string>
+    <string name="account_settings_header">Ajustes de Cuenta</string>
+    <string name="faq_title">Preguntas Frecuentes</string>
+    <string name="faq_summary">Consulta las preguntas frecuentes sobre la app.</string>
+    <string name="request_admin_title">Solicitar Ser Administrador</string>
+    <string name="request_admin_summary">Envía una solicitud para convertirte en administrador.</string>
+    <string name="notifications_title">Notificaciones</string>
+    <string name="notifications_on_summary">Recibe notificaciones de la actividad de tu comunidad.</string>
+    <string name="notifications_off_summary">No recibirás notificaciones de la app.</string>
+    <string name="logout_title">Cerrar Sesión</string>
+    <string name="logout_summary">Desconéctate de tu cuenta.</string>
+    <string name="delete_account_title">Eliminar Cuenta</string>
+    <string name="delete_account_summary">Elimina permanentemente tu cuenta de la app.</string>
+    <string name="title_settings">Ajustes</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="salir">Salir</string>
+    <string name="txt_title_alert_crete">Salir sin guardar</string>
+    <string name="txt_message_alert_create">Si sales ahora, perderás los datos ingresados. ¿Quieres continuar?</string>
+    <string name="txt_message_alert_settings">¿Estás seguro de que deseas cerrar sesión?</string>
+    <string name="txt_message_alert_settings_delete">¿Estás seguro de que deseas eliminar tu cuenta?</string>
+    <string name="txt_title_alert_settings">Confirmación</string>
+    <string name="default_avatar">https://firebasestorage.googleapis.com/v0/b/nest-4db56.firebasestorage.app/o/img_default_avatar.png?alt=media&amp;token=43f1bd31-813b-4eba-b2d8-39288a95612d</string>
+    <string name="selecciona_una_imagen">Selecciona una imagen</string>
+    <string name="err_no_incidence_data">No hay datos para compartir</string>
+    <string name="share_title">Compartir con…</string>
+    <string name="share_incidence">🚨 ¡Atención, vecino! 🚨\n\nParece que hay un problema en la comunidad:\n\n🔹 *%s*\n📅 Fecha del reporte: %s\n📝 Descripción: %s\n\nSi puedes, échale un vistazo o avisa a quien corresponda. ¡Entre todos hacemos del edificio un mejor lugar! 🏠💪</string>
+    <string name="home_eliminar_incidencia">Eliminar incidencia</string>
+    <string name="home_editar_incidencia">Editar incidencia</string>
+    <string name="title_detail">Detalles Incidencia</string>
+    <string name="detail_descripcion_title">Descripción</string>
+    <string name="detail_comments_title">Comentarios Administrador</string>
+    <string name="txt_edit_incidence_estado">Estado</string>
+    <string name="txt_edit_incidence_professional">Profesional</string>
+    <string name="title_eliminar_in">Eliminar incidencia</string>
+    <string name="message_eliminar_in">¿Estás seguro de que quieres eliminar esta incidencia?</string>
+    <string name="title_signin">Inicio de sesión</string>
+    <string name="registro">Registro</string>
+    <string name="completa_tu_perfil">Completa tu perfil</string>
+    <string name="txt_more_data">Solo necesitamos unos pocos datos para conocerte mejor. ¡Te llevará menos de un minuto!</string>
+    <string name="no_se_puede_enviar_el_correo_no_hay_aplicaci_n_disponible">No se puede enviar el correo, no hay aplicación disponible.</string>
+    <string name="solicitud_de_permisos_de_administrador">Solicitud de permisos de administrador</string>
+    <string name="email_body">
+    ¡Hola! 👋\n\n
+    Soy [Tu Nombre], y me gustaría solicitar permisos de administrador. Aquí te dejo mis datos:\n\n
+    📞 Teléfono: [Tu Teléfono]\n
+    🆔 DNI: [Tu DNI]\n\n
+    Motivo de la solicitud:\n
+    [Motivo corto y claro]\n\n
+    ¡Gracias por tu tiempo! 🙌
+    </string>
+    <string name="elige_una_aplicaci_n_de_correo">Elige una aplicación de correo</string>
+</resources>
