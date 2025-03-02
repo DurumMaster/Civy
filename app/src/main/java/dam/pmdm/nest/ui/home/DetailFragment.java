@@ -118,7 +118,6 @@ public class DetailFragment extends Fragment {
                     public void onClick(DialogInterface dialog, int which) {
                         String mensaje = input.getText().toString().trim();
                         if (!mensaje.isEmpty()) {
-                            // Llamar al ViewModel para agregar el comentario
                             String incidenciaId = viewModel.getIncidence().getValue().getId();
                             viewModel.addComment(incidenciaId, mensaje);
                         }

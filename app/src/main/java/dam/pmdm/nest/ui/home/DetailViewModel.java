@@ -92,16 +92,21 @@ public class DetailViewModel extends ViewModel {
     }
 
     public void addComment(String incidenciaId, String mensaje) {
-        String creationDate = new SimpleDateFormat("dd/MM/yyyy HH:mm", Locale.getDefault()).format(new Date());
+        if (incidenciaId == null || incidenciaId.isEmpty()) {
+            return;
+        }
 
+        String creationDate = new SimpleDateFormat("dd/MM/yyyy HH:mm", Locale.getDefault()).format(new Date());
         Comment comentario = new Comment(mensaje, creationDate);
 
         DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference("incidences");
 
-        String comentarioId = dbRef.child(incidenciaId).child("comments").push().getKey();
-        if (comentarioId != null) {
-            dbRef.child(incidenciaId).child("comments").child(comentarioId).setValue(comentario);
-        }
+        String comentarioId = String.valueOf(System.currentTimeMillis());
+
+        dbRef.child(incidenciaId)
+                .child("comments")
+                .child(comentarioId)
+                .setValue(comentario);
     }
 
     private void loadComments() {
